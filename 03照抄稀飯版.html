@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>呆頭兒與他的油宅天地</title>
+    <style type="text/css">
+        .header {
+            display: flex;
+            padding: 6px 10px;
+            background-color: black;
+        }
+        
+        .header nav {
+            text-align: right;
+            width: 100%;
+            font-size: 0px;
+        }
+        
+        .header nav a {
+            display: inline-block;
+            line-height: 52px;
+            font-size: 16px;
+            text-decoration: none;
+            color: cornsilk;
+            padding: 0 10px;
+        }
+        
+        .header nav a:hover {
+            background-color: darkgoldenrod;
+        }
+        
+        .banner img {
+            width: 100%;
+        }
+        
+        .path {
+            display: flex;
+        }
+        
+        .path li {
+            position: relative;
+            padding: 6px 8px;
+        }
+        
+        .path li a {
+            color: darkgray;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        
+        .path li+li::before {
+            content: '/';
+            position: absolute;
+            left: 0px;
+            /* color: darkgreen; */
+        }
+        
+        .about .wrap {
+            display: flex;
+        }
+        
+        .wrap {
+            width: 960px;
+            margin: auto;
+            /* display: flex; */
+        }
+        
+        .about>h2 {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+        }
+        
+        .about>p {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            color: darkorange;
+            padding: 10px 0 25px;
+        }
+        
+        .about .wrap .item {
+            width: 300px;
+            padding: 10px 10px;
+            text-align: center;
+            line-height: 25px;
+            font-size: 18px;
+        }
+        
+        .about .wrap .item>h3 {
+            padding: 15px;
+            font-size: 30px;
+        }
+        
+        .footer {
+            text-align: center;
+            background-color: #000;
+            color: lightgrey;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <a href=""><img src="icon.png" width="70" height="50" alt="logo"></a>
+        <nav>
+            <a href="">關於我們</a>
+            <a href="">聯絡我們</a>
+            <a href="">有趣的小故事</a>
+            <a href="">資訊分享</a>
+            <a href="">更多</a>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <img src="展示櫃.jpg" width="1920" height="475" alt="展示櫃">
+    </div>
+
+    <ul class="path">
+        <li><a href="">首頁</a></li>
+        <li><a href="">最新消息</a></li>
+        <li><a href="">我的最愛</a></li>
+    </ul>
+
+    <div class="about">
+        <h2>我的老婆</h2>
+        <p>我們的故事</p>
+        <div class="wrap">
+            <div class="item">
+                <img src="GSC忍.jpg" width="225" height="300" alt="GSC忍">
+                <h3>GSC忍野忍</h3>
+                <p>她是我的第一支PVC</p>
+            </div>
+            <div class="item">
+                <img src="ALTER忍.jpg" width="222" height="300" alt="ALTER忍">
+                <h3>ALTER忍野忍</h3>
+                <p>她是我的第一個從日本買入的PVC</p>
+            </div>
+            <div class="item">
+                <img src="MIO.jpg" width="224" height="300" alt="MIO">
+                <h3>GSC figma 秋山凜</h3>
+                <p>k-on是我人生中看過最溫暖的作品，最近想湊齊五隻組完整樂團，意者私。</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; copyright 2021 by 呆頭兒
+    </div>
+</body>
+
+</html>
