@@ -35,11 +35,14 @@
         }
         
         .banner img {
-            width: 100%;
+            width: 99vw;
+            height: 30vh;
         }
         
         .path {
+            background-color: #000;
             display: flex;
+            padding: 0 20px;
         }
         
         .path li {
@@ -60,18 +63,11 @@
             /* color: darkgreen; */
         }
         
-        .about .wrap {
-            display: flex;
-        }
-        
-        .wrap {
-            width: 960px;
-            margin: auto;
-            /* display: flex; */
-        }
+        .wrap {}
         
         .about>h2 {
-            width: 100%;
+            background-color: antiquewhite;
+            /* width: 100%; */
             margin: auto;
             text-align: center;
             font-size: 30px;
@@ -79,6 +75,7 @@
         }
         
         .about>p {
+            background-color: aqua;
             width: 100%;
             margin: auto;
             text-align: center;
@@ -86,12 +83,25 @@
             padding: 10px 0 25px;
         }
         
+        .about .wrap {
+            background-color: aquamarine;
+            /* width: 33.33333%; */
+            /* margin: auto; */
+            display: flex;
+            padding: 20px;
+            margin: auto;
+            /* flex-wrap: wrap; */
+        }
+        
         .about .wrap .item {
-            width: 300px;
+            background-color: blanchedalmond;
+            width: 250px;
+            height: 450px;
             padding: 10px 10px;
             text-align: center;
             line-height: 25px;
             font-size: 18px;
+            /* margin: auto; */
         }
         
         .about .wrap .item>h3 {
@@ -99,11 +109,30 @@
             font-size: 30px;
         }
         
+        .about .wrap .item.three>h3 {
+            color: blue;
+            padding: 5px;
+            font-size: 30px;
+        }
+        
+        .about .wrap .item.three>p {
+            padding: 0px;
+            font-size: 15px;
+        }
+        
         .footer {
             text-align: center;
             background-color: #000;
             color: lightgrey;
             padding: 10px;
+        }
+        
+        @media screen and (max-width:680) {
+            .about .wrap {
+                background-color: aquamarine;
+                display: flex;
+                flex-wrap: wrap;
+            }
         }
     </style>
 </head>
@@ -122,7 +151,7 @@
     </div>
 
     <div class="banner">
-        <img src="展示櫃.jpg" width="1920" height="475" alt="展示櫃">
+        <img src="展示櫃.jpg" alt="展示櫃">
     </div>
 
     <ul class="path">
@@ -135,17 +164,17 @@
         <h2>我的老婆</h2>
         <p>我們的故事</p>
         <div class="wrap">
-            <div class="item">
+            <div class="item one">
                 <img src="GSC忍.jpg" width="225" height="300" alt="GSC忍">
                 <h3>GSC忍野忍</h3>
                 <p>她是我的第一支PVC</p>
             </div>
-            <div class="item">
+            <div class="item two">
                 <img src="ALTER忍.jpg" width="222" height="300" alt="ALTER忍">
                 <h3>ALTER忍野忍</h3>
                 <p>她是我的第一個從日本買入的PVC</p>
             </div>
-            <div class="item">
+            <div class="item three">
                 <img src="MIO.jpg" width="224" height="300" alt="MIO">
                 <h3>GSC figma 秋山凜</h3>
                 <p>k-on是我人生中看過最溫暖的作品，最近想湊齊五隻組完整樂團，意者私。</p>
